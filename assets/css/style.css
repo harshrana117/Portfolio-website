@@ -4,7 +4,7 @@
 :root {
     --header-height: 3rem;
 
-    --hue-color: 250;
+    --hue-color: 250; /*Purple 250-Green 142-Blue 230-Pink 340*/
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -284,7 +284,7 @@ img{
 }
 
 .home_scroll{
-    /*display: none*/
+    display: none
 }
 
 .home_scroll-button{
@@ -304,8 +304,69 @@ img{
 }
 
 
+/*=============== BUTTONS ==============*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
 
 
+/*=============== ABOUT ==============*/
+.about_img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
 
+.about_info{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
 
+.about_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: ar(--mb-2-5);
+}
+
+.about_info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about_info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about_info-title,
+.about_info-name{
+    display: block;
+    text-align: center;
+}
+
+.about_buttons{
+    display: flex;
+    justify-content: center;
+}
 
