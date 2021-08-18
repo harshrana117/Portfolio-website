@@ -7,14 +7,19 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Responsive portfolio website</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- =================UNICONS======================== -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- ================= Swiper CSS ======================== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- ==================== CSS ============================== -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Personal Portfolio Website</title>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -406,6 +411,7 @@
 
                   
                 </div>
+
               </div>
 
 
@@ -427,9 +433,7 @@
                     <span class="qualfication_line"></span>
                   </div>
                 </div>
-
                 <!-- =============Qualification 2 ================= -->
-
                 <div class="qualification_data">
                   <div></div>
                   <div>
@@ -448,9 +452,7 @@
 
                   
                 </div>
-
                 <!-- =============Qualification 3 ================= -->
-
                 <div class="qualification_data">
                   <div>
                     <h3 class="qualification_title">Graphic Designer</h3>
@@ -466,9 +468,7 @@
                     <span class="qualfication_line"></span>
                   </div>
                 </div>
-
                 <!-- =============Qualification 4 ================= -->
-
                 <div class="qualification_data">
                   <div></div>
                   <div>
@@ -487,18 +487,99 @@
 
                   
                 </div>
-
-
-
-
                 
               </div>
-            
-
 
           </div>
         </section>
 
+        <!-- =============Qualification/Education ================= -->
+        <section class="portfolio section" id="portfolio">
+          <h2 class="section_title">Portfolio</h2>
+          <span class="section_subtitle">Recent Work & Projects</span>
+
+          <div class="portfolio_container container swiper-container mySwiper">
+            <div class="swiper-wrapper">
+
+              <!-- ============== PORTFOLIO 1 ================== -->
+              <div class="portfolio_content grid swiper-slide">
+                <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_mg">
+
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Crwn-Clothing</h3>
+                  <p class="portfolio_description">Online clothing store with all functionalities Categories,Add to cart, Checkout, Caching data, Data Persistance,State management </p>
+                  <a href="#" class="button button--flex button--small portfolo_button">
+                    Demo
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <!-- ============== PORTFOLIO 2 ================== -->
+              <div class="portfolio_content grid swiper-slide">
+                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_mg">
+
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Unbound</h3>
+                  <p class="portfolio_description">Ed-Tech learnin platform for programmers. Attempt Challenges, build projects, Submit and get reviewed by experts </p>
+                  <a href="#" class="button button--flex button--small portfolo_button">
+                    Demo
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <!-- ============== PORTFOLIO 3 ================== -->
+              <div class="portfolio_content grid swiper-slide">
+                <img src="assets/img/portfolio2.jpg" alt="" class="portfolio_mg">
+
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Eye Care</h3>
+                  <p class="portfolio_description">A tool to help maintain safe distance from laptop screen, very helpful during longer usage. Uses built in algorithm to calculate face distance of user from screen and reminds to move back if user comes too close.</p>
+                  <a href="#" class="button button--flex button--small portfolo_button">
+                    Demo
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <!-- ============== PORTFOLIO 4 ================== -->
+              <div class="portfolio_content grid swiper-slide">
+                <img src="assets/img/portfolio3.jpg" alt="" class="portfolio_mg">
+
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">REVED</h3>
+                  <p class="portfolio_description">Attendance Management, Note taking and To-Do application for students with recommendation system for attendance. Clean and Simple UI, Easy to Use </p>
+                  <a href="#" class="button button--flex button--small portfolo_button">
+                    Demo
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </a>
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- ===== Add Arrows ===== -->
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- ===== Add Arrows ===== -->
+            <div class="swiper-pagination"></div>
+
+          </div>
+        </section>
+
+         <!--===================== JS ===================-->
+         <script src="assets/js/swiper-bundle.min.js"></script>
         <!--===================== JS ===================-->
     <script src="assets/js/main.js" async defer></script>
   </body>
