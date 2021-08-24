@@ -12,7 +12,7 @@ if(navToggle){
 }
 
 /*======== Remove Menu Mobile =======*/
-const navLink = document.querySelectorAll('.nav_link')
+const navLink = document.querySelectorAll('.nav_link', 'nav_close')
 
 function linkAction(){
   const navMenu = document.getElementById('nav_menu');
@@ -75,7 +75,26 @@ let swiper = new Swiper(".portfolio_container", {
   },
 });
 
+/*=============== Scroll Sections Active Link ================*/
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive(){
+  const scrollY = window.pageYOffset
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute('id')
+
+    if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+      document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+    }else{
+      document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+    }
+  })
+}
+
+window.addEventListener('scroll', scrollActive)
 
 
 
