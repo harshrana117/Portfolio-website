@@ -116,7 +116,7 @@ window.addEventListener('scroll', scrollUp)
 
 /*=============== Dark Light Theme ================*/
 const themeButton = document.getElementById('theme-button')
-const darkTheme = 'uil-moon'
+const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
 //Previously selected topic (if user selected)
